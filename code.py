@@ -1,6 +1,6 @@
 import psycopg2 
 
-def insert_postgress():
+def insert_postgress(id, value1, value2):
 
 #Establishing the connection
     conn = psycopg2.connect(database=" ", user=' ', password=' ', host=' ', port= ' ')
