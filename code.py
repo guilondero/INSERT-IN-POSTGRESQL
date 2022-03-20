@@ -1,6 +1,5 @@
 import psycopg2 
 
-
 def insert_postgress():
 
 #Establishing the connection
@@ -13,6 +12,7 @@ def insert_postgress():
     query = "INSERT INTO track (id, value1, value2) VALUES (%s, %s, %s);"
     data = (id, value1, value2)
 
+    
     cursor = conn.cursor()
     cursor.execute(query, data)
     conn.commit()
