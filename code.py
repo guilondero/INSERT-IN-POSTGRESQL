@@ -9,7 +9,7 @@ def insert_postgress(id, value1, value2):
     conn.autocommit = True
 
 # Preparing SQL queries to INSERT a record into the database.
-    query = "INSERT INTO track (id, value1, value2) VALUES (%s, %s, %s);"
+    query = "INSERT INTO "YOURTABLE" (id, value1, value2) VALUES (%s, %s, %s);"
     data = (id, value1, value2)
 
     
