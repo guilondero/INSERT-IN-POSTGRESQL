@@ -5,7 +5,7 @@ def insert_postgress(id, value1, value2):
 #Establishing the connection
     conn = psycopg2.connect(database=" ", user=' ', password=' ', host=' ', port= ' ')
 
-#Setting auto commit false
+
     conn.autocommit = True
 
 # Preparing SQL queries to INSERT a record into the database.
